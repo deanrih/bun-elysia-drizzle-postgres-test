@@ -11,10 +11,8 @@
   "devDependencies": {
     "@types/bun": "latest",
     "typescript": "^5.4.5",
+    "@faker-js/faker": "^8.4.1",
     "drizzle-kit": "^0.21.2"
-  },
-  "peerDependencies": {
-    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@sinclair/typebox": "^0.32.30",
