@@ -10,18 +10,26 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "drizzle-kit": "^0.20.17"
+    "typescript": "^5.4.5",
+    "drizzle-kit": "^0.21.2"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@sinclair/typebox": "^0.32.27",
-    "drizzle-orm": "^0.30.10",
-    "elysia": "^1.0.15",
+    "@sinclair/typebox": "^0.32.30",
+    "elysia": "1.0.20",
     "luxon": "^3.4.4",
     "postgres": "^3.4.4",
     "ts-results-es": "^4.1.0",
-    "zod": "^3.23.5"
+    "@elysiajs/cors": "1.0.2",
+    "@elysiajs/cron": "1.0.3",
+    "@elysiajs/eden": "^1.0.13",
+    "@elysiajs/swagger": "1.0.5",
+    "zod": "^3.23.5",
+    "drizzle-orm": "^0.30.6",
+    "drizzle-typebox": "^0.1.1",
+    "logestic": "^1.1.1",
+    "pg": "^8.11.5"
   }
 }
