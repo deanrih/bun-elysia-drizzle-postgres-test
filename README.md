@@ -1,4 +1,4 @@
-# Test repo to reproduce CONNECT_TIMEOUT issue
+# Test repo to reproduce CONNECTION_CLOSED issue
 
 ### To install dependencies:
 
