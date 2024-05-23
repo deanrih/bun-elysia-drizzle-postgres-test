@@ -1,8 +1,7 @@
 import { Elysia, t } from "elysia";
 
-export const app = new Elysia({ prefix: "/health" }).guard({}, (app) =>
-  app.get(
-    "/check",
+export const app = new Elysia().get(
+    "/health",
     async ({ error }) => {
       try {
         const startTime = performance.now();
@@ -34,4 +33,3 @@ export const app = new Elysia({ prefix: "/health" }).guard({}, (app) =>
       },
     }
   )
-);

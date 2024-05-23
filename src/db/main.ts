@@ -5,6 +5,5 @@
   
   const dbUrl = Bun.env.DATABASE_URL!;
   const queryClient = postgres(dbUrl.toString());
-  export const db = drizzle(queryClient, { schema });
-  
+  export const database = drizzle(queryClient, { schema });
   

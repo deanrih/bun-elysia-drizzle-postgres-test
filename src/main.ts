@@ -4,6 +4,7 @@ import { Logestic } from "logestic";
 import swagger from "@elysiajs/swagger";
 
 import { app as health } from "./routes/health";
+import { app as user } from "./routes/user";
 //
 
 const app = new Elysia()
@@ -20,8 +21,9 @@ const app = new Elysia()
   .use(swagger())
   .use(Logestic.preset("fancy"))
   .use(health)
+  .use(user)
   .listen(3500);
-  
+
 console.log(`🦊 Elysia is ON! ${app.server?.hostname}:${app.server?.port}`);
 
 export type App = typeof app;
