@@ -8,6 +8,13 @@ import { app as user } from "./routes/user";
 //
 
 const app = new Elysia()
+  .onError(({ error }) => {
+    console.error({ error });
+    return {
+      message: error.message,
+      time: new Date().toISOString(),
+    };
+  })
   .get("/favicon.ico", () => {
     return "No Icon Found!";
   })
